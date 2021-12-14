@@ -1,0 +1,35 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://njh.me/>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <http://njh.me/#me> ;
+  foaf:primaryTopic <http://njh.me/#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<http://njh.me/#me>
+  a foaf:Person ;
+  foaf:name "Ana Davcheva" ;
+  foaf:title "Mrs" ;
+  foaf:givenname "Ana" ;
+  foaf:family_name "Davcheva" ;
+  foaf:nick "Ana" ;
+  foaf:mbox_sha1sum "0d8c908d40eb73a1ad673f27ca12039bc960391a" ;
+  foaf:homepage <https://www.linkedin.com/in/ana-davcheva-5315431a6/> ;
+  foaf:depiction <http://njh.me/> ;
+  foaf:phone <tel:123456789> ;
+  foaf:workplaceHomepage <https://www.linkedin.com/company/teamlift1/> ;
+  foaf:workInfoHomepage <https://money.usnews.com/careers/best-jobs/software-developer> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Viktorija" ;
+    foaf:mbox_sha1sum "d6e5311c20162142afbf9797e2b91ad08c1518bc" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/viktorijaMi/my-foaf-project/master/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Aleksandar" ;
+    foaf:mbox_sha1sum "24b3feb2c88cbf5c3a865fcfb8769a02bb42bee3" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/Aleksandar1932/WBS_2021/lab-05/foaf.ttl>
+  ] .
